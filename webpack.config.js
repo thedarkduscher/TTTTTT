@@ -11,6 +11,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  resolve: {
+    extensions: ['*', '.js', '.jsx', '.json', '.ejs']
+  },
   module: {
     rules: [
       {
@@ -24,17 +27,14 @@ module.exports = {
         }
       },
       {
-        test: /\.(html)$/,
-        use: {
-          loader: 'html-loader',
-          options: {
-            attrs: [':data-src']
-          }
-        }
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
+    })
   ]
 };

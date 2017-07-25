@@ -1,0 +1,28 @@
+{
+  "name": "tttttt",
+  "version": "0.0.1",
+  "description": "Tic-tac-toe square",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedarkduscher/TTTTTT.git"
+  },
+  "keywords": [
+    "tic",
+    "tac",
+    "toe",
+    "squared"
+  ],
+  "contributors": [
+    "Philipp Mandler <info@philipp-mandler.com>",
+    "Arkadius Roczniewski <arkadius@roczniewski.de>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thedarkduscher/TTTTTT/issues"
+  },
+  "homepage": "https://github.com/thedarkduscher/TTTTTT#readme"
+}
